@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cube</title>
+    <link rel="Shortcut icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="settings-container">
+        <div class="title">Cube</div>
+        <div class="btn-container">
+            <div id="start">Start</div>
+            <div id="pause">Pause</div>
+            <div id="continue">Continue</div>
+            <div id="time-left">Time</div>
+            <div id="res-table">Result Table</div>
+            <div id="game-res">Your score: 0 points.</div>
+        </div>
+        <div class="container"></div>
+    </header>
+
+    <div class="res-table">
+        <div class="res-table-header">Result</div>
+        <div class="res-container"></div>
+    </div>
+
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="my-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>Enter your name:</div>
+                    <input type="text" id="player-name">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary save-btn">Save score</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
