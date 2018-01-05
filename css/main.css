@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  height: 100%;
+  background-color: black;
+  justify-content: space-around; }
+  body .settings-container {
+    display: flex;
+    flex-direction: column;}
+    body .settings-container .title {
+      font-size: 30px;
+      background-color: black;
+      justify-content: flex-start;
+      color: #fff; }
+      body .settings-container .title::first-letter{
+        padding-left: 10px;
+      }
+    body .settings-container .btn-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: black }
+      body .settings-container .btn-container #start {
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+        background-color: grey;
+        color: white;
+        border-radius: 5px; }
+      body .settings-container .btn-container #pause, body .settings-container .btn-container #continue, body .settings-container .btn-container #res-table ,body .settings-container .btn-container #continue, body .settings-container .btn-container #game-res {
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: grey;
+        color: white;
+        border-radius: 10px; }
+      body .settings-container .btn-container #time-left {
+        background-color: red;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px; }
+      body .settings-container .btn-container #pause:hover, body .settings-container .btn-container #start:hover, body .settings-container .btn-container #continue:hover, body .settings-container .btn-container #res-table:hover, body .settings-container .btn-container #time-left:hover {
+        cursor: pointer; }
+    body .settings-container .container {
+      width: 1000px;
+      height: 490px;
+      padding: 10px;
+      position: relative;
+      border:5px solid red;
+      border-radius: 5px; }
+      body .settings-container .container .cubiq {
+        width: 40px;
+        height: 40px;
+        margin: 15px;
+        position: absolute;
+        background-color: white;
+        border: 2px solid red;}
+  body .res-table {
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+   }
+    body .res-table .res-table-header {
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      padding: 5px;
+      border-top: 10px solid red;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+
+.btn {
+  background-color: red;
+  outline: none;
+  border: 0px;
+}
+
+.save-btn:hover {
+  background-color: black;
+}
+
+.res-container {
+  width: 200px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.result-item {
+  display: flex;
+  height: auto;
+  margin: 20px 5px;
+  background-color: white;  
+  border-radius: 5px;
+  flex-direction: column;
+  text-align: center;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+.res-item div {
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+#player-name {
+  outline-color: red;
+}
+
+div {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
